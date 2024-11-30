@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Quiz extends Model
 {
     protected $fillable = ['user_id', 'name', 'description'];
+    protected $attributes = [
+        'description' => 'No description available'
+    ];
 
     public function user()
     {

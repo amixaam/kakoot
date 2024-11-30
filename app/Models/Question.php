@@ -12,4 +12,12 @@ class Question extends Model
     {
         return $this->belongsTo(Quiz::class);
     }
+
+    protected function casts(): array
+    {
+        return [
+            'answers' => 'array',
+            'double_points' => 'boolean'
+        ];
+    }
 }

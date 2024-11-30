@@ -34,8 +34,8 @@ export default function Authenticated({
                   Dashboard
                 </NavLink>
                 <NavLink
-                  href={route('new.game')}
-                  active={route().current('new.game')}
+                  href={route('quiz.create')}
+                  active={route().current('quiz.create')}
                 >
                   New Game
                 </NavLink>

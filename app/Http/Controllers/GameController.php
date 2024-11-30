@@ -3,20 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Game;
+use Error;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class GameController extends Controller
 {
-    public function validate(Request $request)
+    public function validate(string $pin)
     {
-        // find game by its pin
-        $game = Game::where('pin', $request->pin)->first();
+        if (strlen($pin) != 6) {
+            return response("PIN should be 6 characters: " . strlen($pin) . ".", 404);
+        }
+
+        $game = Game::where('pin', $pin)->first();
 
         if (!$game) {
-            return back()->withErrors(['error' => "Game not found"]);
+            return response("Game not found.", 404);
         } else {
-            return back()->with(['game' => $game]);
+            return response($game, 200);
         }
     }
+
+    public function join(string $pin) {}
 }
