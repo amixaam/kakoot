@@ -4,12 +4,12 @@ import {
   FormField,
   FormItem,
   FormMessage,
-} from '@/components/ui/form';
+} from '@/Components/ui/form';
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from '@/components/ui/input-otp';
+} from '@/Components/ui/input-otp';
 
 import DefaultLayout from '@/Layouts/DefaultLayout';
 import { PageProps } from '@/types';

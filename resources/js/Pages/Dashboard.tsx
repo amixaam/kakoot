@@ -1,10 +1,10 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/Components/ui/button';
 import {
   Card,
   CardContent,
-  CardFooter,
+  CardFooter, 
   CardHeader,
-} from '@/components/ui/card';
+} from '@/Components/ui/card';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head, Link } from '@inertiajs/react';
 

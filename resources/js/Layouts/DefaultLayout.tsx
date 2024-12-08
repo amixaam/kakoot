@@ -1,4 +1,4 @@
-import NavBar from '@/components/NavBar';
+import NavBar from '@/Components/NavBar';
 import { Head, usePage } from '@inertiajs/react';
 import { PropsWithChildren } from 'react';
 

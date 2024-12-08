@@ -37,7 +37,6 @@
     },
     "dependencies": {
         "@hookform/resolvers": "^3.9.1",
-        "@radix-ui/react-checkbox": "^1.1.2",
         "@radix-ui/react-label": "^2.1.0",
         "@radix-ui/react-radio-group": "^1.2.1",
         "@radix-ui/react-slot": "^1.1.0",
@@ -46,10 +45,8 @@
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "input-otp": "^1.4.1",
-        "laravel-echo": "^1.17.1",
-        "lucide-react": "^0.462.0",
-        "pusher-js": "^8.4.0-rc2",
-        "react-hook-form": "^7.53.2",
+        "lucide-react": "^0.468.0",
+        "react-hook-form": "^7.54.0",
         "tailwind-merge": "^2.5.5",
         "tailwindcss-animate": "^1.0.7",
         "zod": "^3.23.8"
